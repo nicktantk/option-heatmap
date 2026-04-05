@@ -12,7 +12,7 @@ from heatmap_builder import build_heatmaps, plot_heatmaps
 # ─────────────────────────────────────────────
 st.set_page_config(
     page_title="BS Option Pricer",
-    page_icon="📈",
+    page_icon="BS",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -177,7 +177,7 @@ st.markdown(
 #  GREEKS DASHBOARD
 # ─────────────────────────────────────────────
 
-st.markdown("### 📐 Greeks Dashboard")
+st.markdown("### Greeks Dashboard")
 
 # ── Row 1 : Price cards ───────────────────────────────────────────────────
 price_col1, price_col2 = st.columns(2)
@@ -195,7 +195,7 @@ with price_col1:
             <div style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;
                         color:#4ade80;text-transform:uppercase;letter-spacing:0.1em;
                         margin-bottom:6px;">
-                📞 Call Price
+                Call Price
             </div>
             <div style="font-family:'IBM Plex Mono',monospace;font-size:1.6rem;
                         color:#86efac;font-weight:600;">
@@ -219,7 +219,7 @@ with price_col2:
             <div style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;
                         color:#f87171;text-transform:uppercase;letter-spacing:0.1em;
                         margin-bottom:6px;">
-                📤 Put Price
+                Put Price
             </div>
             <div style="font-family:'IBM Plex Mono',monospace;font-size:1.6rem;
                         color:#fca5a5;font-weight:600;">
@@ -284,9 +284,9 @@ hm_data = build_heatmaps(
 )
 
 if pnl_mode:
-    st.markdown("### 💹 PnL Surface  _(diverging: 🟢 Profit / 🔴 Loss)_")
+    st.markdown("### PnL Surface  _(diverging: Profit / Loss)_")
 else:
-    st.markdown("### 🌡️ Option Price Surface")
+    st.markdown("### Option Price Surface")
 
 fig_l, fig_r = plot_heatmaps(
     hm_data,
@@ -306,7 +306,7 @@ with hm_col2:
 #  FORMULA REFERENCE EXPANDER
 # ─────────────────────────────────────────────
 
-with st.expander("📖 Formula Reference"):
+with st.expander("Formula Reference"):
     col_f1, col_f2 = st.columns(2)
 
     with col_f1:
