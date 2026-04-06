@@ -105,6 +105,10 @@ st.markdown(
 # ─────────────────────────────────────────────
 
 with st.sidebar:
+    st.markdown("<p class='subtitle'>Made by Nicholas</p>", unsafe_allow_html=True)
+    st.caption("<span class='badge'>[Github](https://github.com/nicktantk)</span> <span class='badge'>[LinkedIn](https://www.linkedin.com/in/nicholas-tan-tee-khoon/)</span>", unsafe_allow_html=True)
+    st.markdown("---")
+
     st.markdown("## ⚙️ Model Inputs")
 
     st.markdown("### 📊 Market Data")
